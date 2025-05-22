@@ -1,0 +1,28 @@
+body {
+    background-color: #faf2e5;
+}
+
+.header-name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4em;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: large;
+}
+
+.main-nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 12px;
+ 
+}
+
+.main-nav a:hover{
+    color: #504949;
+    text-decoration: underline;
+}
