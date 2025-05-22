@@ -30,7 +30,7 @@
 }
 
 body {
-    background-color: #faf2e5;
+    background-color: #2d402e;
 }
 
 p {
@@ -38,8 +38,11 @@ p {
 }
 
 h1 {
+    margin: 10px 0px;
+    color: #bf4830;
     font-family: "Titania", sans-serif;
     font-size: 75px;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -52,6 +55,9 @@ h3 {
 
 header {
     background-color: #bf4830;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.247);
+    position: sticky;
+    top: 0px;
 }
 
 .header-group {
@@ -64,6 +70,7 @@ header {
     font-family: "Titania", sans-serif;
     font-size: 6em;
     color: white;
+    text-shadow: 4px 4px #F2A444, 8px 8px black;
 }
 
 .header-subtitle {
@@ -82,22 +89,36 @@ header {
 }
 
 .main-nav a {
-    padding: 12px 30px;
+    padding: 10px 30px;
     font-family: "Georgia", sans-serif;
-    text-transform: uppercase;
+    text-align: center;
     text-decoration: none;
+    text-shadow: 0px 2px black;
+    text-transform: uppercase;
     letter-spacing: 2px;
     color: white;
- 
+    transition: 100ms;
 }
 
 .main-nav a:hover {
-    /* font-weight: bold; */
-    color: #f2a444;
-    text-decoration: underline;
+    background-color: white;
+    text-shadow: none;
+    color: black;
+    transition: 100ms;
 }
 
 .vr {
   border-left: 2px solid white;
   height: inherit;
+}
+
+.main-scroll {
+    margin: 0px 10vw;
+    background-color: #faf2e5;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
 }
