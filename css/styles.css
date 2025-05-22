@@ -1,21 +1,21 @@
 @font-face{
     font-family: 'Bauhaus';
-    src: url('css/fonts/Bauhaus.ttf');
+    src: url('fonts/Bauhaus.ttf');
 }
 
 @font-face{
-    font-family: 'Titania-Outline';
-    src: url('css/fonts/Titania-Outline.ttf');
+    font-family: 'Titania Outline';
+    src: url('fonts/Titania-Outline.ttf');
 }
 
 @font-face{
-    font-family: 'Titnia-Regular';
-    src: url('css/fonts/Titania-Regular.ttf');
+    font-family: 'Titnia Regular';
+    src: url('fonts/Titania-Regular.ttf');
 }
 
 @font-face{
-    font-family: 'Titania-Shadow';
-    src: url('css/fonts/Titania-Shadow.ttf');
+    font-family: 'Titania Shadow';
+    src: url('fonts/Titania-Shadow.ttf');
 }
 
 * {
