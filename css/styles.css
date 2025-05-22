@@ -17,3 +17,23 @@
     font-family: 'Titania-Shadow';
     src: url(css\fonts\Titania-Shadow.ttf);
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: "Georgia", sans-serif;
+}
+
+h1 {
+    font-family: "", sans-serif;
+}
+
+h2 {
+    font-family: "", sans-serif;
+}
+
+h3 {
+    font-family: "", sans-serif;
+}
