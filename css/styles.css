@@ -4,19 +4,20 @@
 }
 
 @font-face{
-    font-family: 'Titania-Outline';
-    src: url('css\fonts\Titania-Outline.ttf');
+    font-family: 'Titania';
+    src: url('./fonts/Titania-Regular.ttf');
 }
 
 @font-face{
-    font-family: 'Titnia-Regular';
-    src: url('css\fonts\Titania-Regular.ttf');
+    font-family: 'Titania Outline';
+    src: url('./fonts/Titania-Outline.ttf');
 }
 
 @font-face{
-    font-family: 'Titania-Shadow';
-    src: url(css\fonts\Titania-Shadow.ttf);
+    font-family: 'Titania Shadow';
+    src: url('./fonts/Titania-Shadow.ttf');
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -27,7 +28,8 @@ p {
 }
 
 h1 {
-    font-family: "", sans-serif;
+    font-family: "Titania", sans-serif;
+    font-size: 75px;
 }
 
 h2 {
