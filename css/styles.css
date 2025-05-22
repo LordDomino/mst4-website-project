@@ -19,8 +19,8 @@
 }
 
 @font-face {
-    font-family: 'Lemon Mcktail';
-    src: url('fonts/Lemon\ Mocktail\ .ttf');
+    font-family: 'Lemon Mocktail';
+    src: url('./fonts/Lemon-Mocktail.ttf');
 }
 
 * {
