@@ -5,18 +5,19 @@
 
 @font-face{
     font-family: 'Titania-Outline';
-    src: url('css\fonts\Titania-Outline.ttf');
+    src: url('css/fonts/Titania-Outline.ttf');
 }
 
 @font-face{
     font-family: 'Titnia-Regular';
-    src: url('css\fonts\Titania-Regular.ttf');
+    src: url('css/fonts/Titania-Regular.ttf');
 }
 
 @font-face{
     font-family: 'Titania-Shadow';
-    src: url(css\fonts\Titania-Shadow.ttf);
+    src: url('css/fonts/Titania-Shadow.ttf');
 }
+
 * {
     margin: 0px;
     padding: 0px;
