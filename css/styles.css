@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Bauhaus';
-    src: url('css/fonts/Bauhaus.ttf');
+    src: url('./fonts/Bauhaus.ttf');
 }
 
 @font-face{
@@ -49,17 +49,19 @@ header {
     background-color: #bf4830;
 }
 
-.header-title {
-    padding-top: 20px;
+.header-group {
+    padding: 20px 0px;
     text-align: center;
+    color: white;
+}
+
+.header-title {
     font-family: "Titania", sans-serif;
     font-size: 6em;
     color: white;
 }
 
 .header-subtitle {
-    padding-bottom: 20px;
-    text-align: center;
     font-family: "Bauhaus", sans-serif;
     font-size: 2em;
     letter-spacing: 5px;
@@ -68,14 +70,14 @@ header {
 
 .main-nav {
     border-top: 2px solid white;
+    border-bottom: 2px solid white;
     display: flex;
     justify-content: center;
-    gap: 25px;
     font-size: large;
 }
 
 .main-nav a {
-    padding: 12px 12px;
+    padding: 12px 30px;
     font-family: "Georgia", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
