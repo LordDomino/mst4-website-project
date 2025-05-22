@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: #2d402e;
+    background-color: #faf2e5;
 }
 
 p {
@@ -53,6 +53,7 @@ header {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.247);
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .header-group {
@@ -108,12 +109,33 @@ header {
 }
 
 .main-scroll {
-    margin: 0px 10vw;
+    margin: 0px 20vw;
+    /* border-left: 2px solid black;
+    border-right: 2px solid black; */
+    /* padding: 0px 10px; */
     background-color: #faf2e5;
+}
+
+.grain-overlay {
+    content: "";
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/grain.jpg'); /* you need to add your grain texture here */
+    opacity: 0.8;
+    pointer-events: none;
+    mix-blend-mode: multiply;
 }
 
 img {
     object-fit: cover;
     width: 100%;
     height: 500px;
+    filter: sepia(0.4) contrast(1.4) brightness(1.1) saturate(1.8) hue-rotate(-10deg);
+}
+
+.main-scroll .content {
+    padding: 5px 20px;
 }
