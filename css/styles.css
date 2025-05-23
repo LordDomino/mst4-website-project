@@ -44,9 +44,14 @@
     font-family: "Georgia", sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
     background-color: #2d402e;
 }
 
@@ -198,7 +203,7 @@ header {
 }
 
 .scrollable {
-    display: block;
+    flex-grow: 1;
 }
 
 
@@ -206,6 +211,7 @@ header {
     anchor-name: --center-scroll;
     margin: 0px auto;
     width: 45vw;
+    height: 100%;
     display: block;
     align-self: center;
     background-color: #faf2e5;
