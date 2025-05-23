@@ -272,8 +272,12 @@ header {
 .article-box {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     gap: 10px;
-    /* width: 100%; */
+}
+
+.array-col {
+    flex-direction: column;
 }
 
 section {
