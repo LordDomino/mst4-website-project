@@ -38,11 +38,15 @@
     src: url('./fonts/Schwarzenberg-Italic.ttf');
 }
 
+@font-face {
+    font-family: 'Chi-Town';
+    src: url('./fonts/Chi-Town.ttf') format('truetype');
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Georgia", sans-serif;
-    transition: 50ms
 }
 
 html {
@@ -52,7 +56,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     background-color: #faf2e5;
     /* background-color: #dfd5c6; */
     background-color: #2d402e;
@@ -123,7 +127,6 @@ h2 {
 
 header {
     background-color: #bf4830;
-    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.247); */
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -135,6 +138,20 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: white;
+}
+
+.small-title {
+    font-family: "Titania", sans-serif;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 2px #F2A444, 4px 4px black;
+}
+
+.small-subtitle {
+    font-family: "Bauhaus", sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 3px;
     color: white;
 }
 
@@ -193,6 +210,18 @@ header {
   margin: 5px 0px;
 }
 
+footer {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.footer-bar {
+    margin-top: 50px;
+    padding: 2px 0px;
+    background-color: #bf4830;
+}
+
 .page-banner {
     background-color: #f2a444;
     align-content: center;
@@ -230,13 +259,13 @@ header {
 
 .scrollable {
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .center-scroll {
     anchor-name: --center-scroll;
     margin: 0px auto;
     width: 40vw;
-    height: 100%;
     display: block;
     align-self: center;
     background-color: #faf2e5;
@@ -266,7 +295,7 @@ header {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .row {
@@ -374,6 +403,10 @@ img {
         background-color: #faf2e5;
     }
     
+    .center-scroll {
+        width: 60vw;
+    }
+
     .article-box {
         flex-direction: column;
     }
@@ -382,14 +415,9 @@ img {
 
 @media only screen and (max-width: 900px) {
 
-
     .row {
         flex-direction: column;
     }
-
-}
-
-@media only screen and (max-width: 700px) {
 
     .big-headline {
         font-size: 4em;
