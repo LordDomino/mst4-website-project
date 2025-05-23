@@ -42,6 +42,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Georgia", sans-serif;
+    transition: 50ms
 }
 
 html {
@@ -86,6 +87,13 @@ h2 {
     font-size: 3em;
     font-weight: normal;
     color: #691200;
+}
+
+.medium-headline-1 {
+    font-family: "Bauhaus", serif;
+    font-size: 3em;
+    color: black;
+    width: fit-content;
 }
 
 .emphasis-box {
@@ -166,6 +174,7 @@ header {
     text-decoration: none;
     /* text-shadow: 0px 2px black; */
     text-transform: uppercase;
+    text-wrap: nowrap;
     letter-spacing: 2px;
     color: #000000;
     transition: 100ms;
@@ -255,6 +264,8 @@ header {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     padding: 10px 20px;
 }
 
@@ -283,7 +294,7 @@ header {
 section {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     border-left: 2px solid #bf4830;
     border-right: 2px solid #bf4830;
     padding: 0px 10px;
@@ -337,17 +348,130 @@ img {
 
 @media only screen and (max-width: 1280px) {
     
+    .banner-group {
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        color: white;
+    }
+
+    .banner-title {
+        font-size: 6vw;
+        text-shadow: 2px 2px #F2A444, 4px 4px black;
+        border-top: 2px solid white;
+    }
+
+    .main-nav {
+        display: flex;
+        overflow-x: auto;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 5px;
+        border-top: 2px solid #bf4830;
+        border-bottom: 2px solid #bf4830;
+        background-color: #faf2e5;
+    }
+    
     .article-box {
         flex-direction: column;
     }
-
+    
 }
 
 @media only screen and (max-width: 900px) {
-    
+
+
     .row {
         flex-direction: column;
     }
 
 }
 
+@media only screen and (max-width: 700px) {
+
+    .big-headline {
+        font-size: 4em;
+    }
+
+    .big-sub-headline {
+        font-size: 2em;
+    }
+
+    header {
+        background-color: #bf4830;
+        position: sticky;
+    }
+
+    .banner-group {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        color: white;
+    }
+
+    .banner-title {
+        font-size: 1.5em;
+        text-shadow: 2px 2px #F2A444, 4px 4px black;
+        border-top: 2px solid white;
+    }
+
+    .banner-subtitle {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+
+    .main-nav {
+        padding: 0px 5px;
+        display: flex;
+        overflow-x: auto;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 5px;
+        border-top: 2px solid #bf4830;
+        border-bottom: 2px solid #bf4830;
+        background-color: #faf2e5;
+    }
+
+    .main-nav a {
+        padding: 10px 20px;
+        align-content: center;
+        font-family: "Georgia", sans-serif;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        letter-spacing: 2px;
+        color: #000000;
+        transition: 100ms;
+    }
+
+    .center-scroll {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .left-scroll {
+        margin: 0px;
+        display: block;
+        position: static;
+        background-color: #faf2e5;
+    }
+
+    .right-scroll {
+        margin: 0px;
+        display: block;
+        position: static;
+        background-color: #faf2e5;
+    }
+
+    .img-cont.small-thumbnail {
+        max-width: none;
+        max-height: 200px;
+    }
+}
