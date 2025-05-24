@@ -66,11 +66,20 @@ p {
     font-family: "Georgia", serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     font-family: "Alyshen", sans-serif;
     font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+h1.mini {
+    font-size: 20px;
 }
 
 h2 {
@@ -105,6 +114,23 @@ h2 {
     font-family: "Lemon Mocktail", serif;
     font-size: 1.5em;
     color: black;
+}
+
+.article-title {
+    font-family: "Bauhaus", serif;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+
+.article-author {
+    font-family: "Schwarzenberg", serif;
+    font-size: 40px;
+}
+
+.article-h1 {
+    font-family: "Titania", serif;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 .emphasis-box {
@@ -371,6 +397,11 @@ section {
     border-left: 2px solid #bf4830;
     border-right: 2px solid #bf4830;
     padding: 0px 10px;
+}
+
+section#article {
+    gap: 5px;
+    padding: 40px 10px 0px 10px;
 }
 
 .top-border {
