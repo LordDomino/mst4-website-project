@@ -66,10 +66,6 @@ p {
     font-family: "Georgia", serif;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 
 h1 {
     font-family: "Alyshen", sans-serif;
@@ -84,8 +80,13 @@ h1.mini {
 
 h2 {
     font-family: "Georgia", serif;
-    font-size: 1.25em;
-    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .big-headline {
@@ -286,6 +287,11 @@ footer {
     padding: 60px 20px;
 }
 
+.center-scroll h1 {
+    padding-top: 40px;
+    border-top: 2px solid #bf4830;
+}
+
 .sep {
     border: 1px solid #bf4830;
     width: inherit;
@@ -401,15 +407,23 @@ section {
 
 section#article {
     gap: 5px;
-    padding: 40px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+#article-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #article-body {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .ar-section {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     padding: 20px 0px;
 }
 
