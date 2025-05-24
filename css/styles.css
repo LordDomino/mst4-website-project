@@ -404,6 +404,15 @@ section#article {
     padding: 40px 10px 0px 10px;
 }
 
+#article-body {
+    padding: 20px 0px;
+}
+
+.ar-section {
+    display: block;
+    padding: 20px 0px;
+}
+
 .top-border {
     display: inline-block;
     border-top: 2px dashed #bf4830;
