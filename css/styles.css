@@ -50,7 +50,6 @@
 }
 
 body::after {
-    /* object-fit: cover; */
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -64,14 +63,12 @@ body::after {
 
 html {
     height: 100%;
-    min-width: 400px;
 }
 
 body {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
     min-height: 100%;
     background-color: #2d402e;
 }
@@ -292,7 +289,7 @@ header::after {
 }
 
 footer {
-    padding-top: 100px;
+    padding: 100px 5vw 20px 5vw;
     text-align: center;
     color: white;
 }
@@ -474,10 +471,10 @@ section#article {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background-image: url('../img/overlay_photo_grunge.jpg'); /* Use your overlay image */
-    background-size: auto;
-    background-repeat: repeat;
-    opacity: 1;
-    mix-blend-mode: color-burn;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
     pointer-events: none;
 }
 
@@ -656,12 +653,12 @@ iframe {
         width: 60vw;
     }
 
-    .article-box {
+    .media-card {
         align-items: stretch;
         flex-direction: column;
     }
 
-    .img-cont.small-thumbnail {
+    .img-cont.maxh-250px {
         max-width: none;
         max-height: 200px;
     }
