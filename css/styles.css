@@ -210,7 +210,6 @@ header::after {
     font-family: "Bauhaus", sans-serif;
     font-size: 1.25em;
     letter-spacing: 3px;
-    color: white;
 }
 
 .banner-title {
@@ -289,15 +288,27 @@ header::after {
 }
 
 footer {
-    padding: 100px 5vw 20px 5vw;
+    display: flex;
+    margin-top: 100px;
     text-align: center;
-    color: white;
+    background-color: #A69333;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-cont {
+    margin: 30px 20px;
+    padding: 20px 10vw;
+    border-top: 2px solid #faf2e5;
+    border-bottom: 2px solid #faf2e5;
 }
 
 .footer-bar {
-    margin-top: 50px;
     padding: 2px 0px;
     background-color: #bf4830;
+    height: 16px;
 }
 
 .page-banner {
@@ -309,6 +320,32 @@ footer {
     text-align: center;
     text-shadow: 4px 4px #faf2e5, 8px 8px black;
     padding: 60px 20px;
+}
+
+.promotion-banner {
+    align-content: center;
+    padding: 60px 20px;
+    font-family: "Lemon Mocktail", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 3px 3px #faf2e5, 6px 6px black;
+    background-color: #f2a444;
+    color: #bf4830;
+
+    .var1 {
+        font-family: "Lemon Mocktail", sans-serif;
+    }
+    
+    .var2, .var * {
+        font-family: "Schwarzenberg", sans-serif;
+    }
+
+    .title {
+        font-family: "Titania", sans-serif;
+        text-shadow: 3px 3px #faf2e5, 6px 6px #bf4830;
+        color: black;
+    }
+
 }
 
 .center-scroll h1 {
@@ -371,7 +408,7 @@ footer {
 }
 
 .right-scroll {
-    margin: 0px 50px 0px 10px;
+    margin: 0px 7vw 0px 10px;
     display: block;
     position: fixed;
     position-anchor: --center-scroll;
@@ -383,7 +420,9 @@ footer {
 .container {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 20px 20px;
+    gap: 10px;
+    padding: 20px 20px 20px 20px;
+    color: black;
 }
 
 .row {
@@ -473,7 +512,7 @@ section#article {
     background-image: url('../img/overlay_photo_grunge.jpg'); /* Use your overlay image */
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    opacity: 0.3;
     mix-blend-mode: multiply;
     pointer-events: none;
 }
@@ -485,8 +524,8 @@ section#article {
     background-image: url('../img/anim_grain.gif'); /* Use your overlay image */
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 1;
-    mix-blend-mode: multiply;
+    opacity: 0.25;
+    mix-blend-mode: color-dodge;
     pointer-events: none;
 }
 
@@ -552,7 +591,7 @@ iframe {
     align-items: flex-start;
     gap: 10px;
     height: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid rgb(0,0,0,0);
     transition: 100ms;
 }
@@ -588,13 +627,26 @@ iframe {
 }
 
 .content {
-    display: block;
     overflow: hidden;
     flex-grow: 1;
 }
 
 .content h2:hover {
     text-decoration: underline;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.credits {
+    text-align: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background-color: #bf4830;
+    color: white;
 }
 
 
