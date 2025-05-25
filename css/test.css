@@ -36,6 +36,14 @@ video {
     height: 100%;
 }
 
+iframe {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
 .video-cont {
     display: flex;
     align-items: center;
